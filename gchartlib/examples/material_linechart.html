@@ -122,7 +122,10 @@
           }
         }
       };
+      
       // [END material_opts]
+      var materialChart = new google.charts.Line(document.getElementById('dualYMaterialChart'));
+      materialChart.draw(daulYData, materialOptions);
 
       // [START classic_opts]
       var classicOptions = {
@@ -152,9 +155,6 @@
         }
       };
       // [END classic_opts]
-
-      var materialChart = new google.charts.Line(document.getElementById('dualYMaterialChart'));
-      materialChart.draw(daulYData, materialOptions);
 
       var classicChart = new google.visualization.LineChart(document.getElementById('dualYClassicChart'));
       classicChart.draw(daulYData, classicOptions);
